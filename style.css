@@ -1,95 +1,115 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Inconsolata', monospace;*/
 
+/*********** GENERAL ***********/
+
 body,
 html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: #fffcfc;
-  background-image: url(images/jonathan-bean-37632.jpg);
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fffcfc;
+    background-image: url(images/jonathan-bean-37632.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #nav-bar {
-  margin-bottom: 0;
-  padding: 0;
-  background: lightslategrey;
-  font-size: 23px;
-  font-family: 'Inconsolata', monospace;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: solid thin black;
+    background: lightslategrey;
+    font-size: 23px;
+    font-family: 'Inconsolata', monospace;
 }
 
 #nav-bar,
 #nav-bar a,
 #nav-bar a:visited {
-  color: darkslategrey;
+    color: darkslategrey;
 }
 
 #nav-bar a:hover {
-  color: white;
+    color: white;
 }
 
 #logo {
-  width: 20%;
-  border-radius: 5%;
-  -webkit-box-shadow: 1px 1px 2px;
-  box-shadow: 1px 1px 2px;
+    width: 20%;
+    border-radius: 5%;
+    -webkit-box-shadow: 1px 1px 2px;
+    box-shadow: 1px 1px 2px;
 }
-
-/*#nav-list > li > a {
-  color: #fff;
-
-}*/
 
 .navbar-toggle {
-  background: #fff;
+    background: #fff;
 }
 
+#shout-out {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*********** INDEX **********/
+
 #head-row {
-  margin: 1px 0 0;
-  width: 100%;
-  height: 650px;
+    margin: 1px 0 0;
+    width: 100%;
+    height: 650px;
 }
 
 #col-head1 {
-  font-weight: bold;
-  font-size: 50px;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 #col-head2 {
-  font-weight: bold;
-  font-size: 40px;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 #list-item {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 28px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
 }
 
 #list-item li {
-  padding: 0 25px;
-  color: darkslategray;
-
+    padding: 0 25px;
+    color: darkslategray;
 }
 
 #col-text {
-  margin-top: 75px;
+    margin-top: 75px;
 }
 
-/*
-footer {
+/*********** CITY SEARCH **********/
 
+#city-info {
+    margin-top: 50px;
 }
-*/
 
-#shout-out {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+#city-info h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#city-div {
+    width: 60%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+input[type='text'] {
+    height: 40px;
+    font-size: 20px;
+}
+
+#city-search-button {
+    height: 40px;
+    /*    font-weight: bold;*/
 }
