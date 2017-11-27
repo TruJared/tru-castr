@@ -44,6 +44,6 @@ function showResults(data) {
   "<H4>Current Temperature: " + (data.main.temp).toFixed(1) + " &deg;F</h4>" +
     "<p>Today's High: " + (data.main.temp_max).toFixed(1) + " &deg;F</p>" +
     "<p>Today's Low: " + (data.main.temp_min).toFixed(1) + " &deg;F</p>" +
-    "<p>Wind Speed: " + (data.wind.speed).toFixed(1) + " MPH</p>" +
+    "<p>Wind Speed: " + (data.wind.speed).toFixed(1) + " m/h</p>" +
     "<p>Humidity: " + (data.main.humidity) + "%</p>";
 }

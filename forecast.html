@@ -26,8 +26,8 @@
 
       <div class="collapse navbar-collapse" id="navcol">
         <ul class="nav navbar-nav navbar-right" id="nav-list">
-          <li><a href="city-search.html" id="current-page">City Search</a></li>
-          <li><a href="forecast.html">Forecast</a></li>
+          <li><a href="city-search.html">City Search</a></li>
+          <li><a href="forecast.html" id="current-page">Forecast</a></li>
           <li><a href="https://openweathermap.org/" target="_blank">Open Weather</a></li>
           <li><a href="http://trujared.com/about" target="_blank">About Me</a></li>
         </ul>
@@ -35,20 +35,56 @@
     </div>
   </nav>
 
-  <div class="container push-footer">
+  <div class="container push-footer" style="height:500px;">
+    <!-- keeps header from going buggy -->
     <div class="row" id="city-info">
       <div clas="col-md-12">
-        <h3 class="text-center">Search For A City</h3>
+        <h3 class="text-center">Get City Forecast</h3>
         <div class="row form-group form-inline" id="city-div">
           <input type="text" name="city" id="city" class="form-control" placeholder="Enter City Name">
+          <select class="form-control" id="days">
+            <option value="1">1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+          </select>
           <button id="city-search-button" class="btn btn-primary">Search City</button>
         </div>
       </div>
     </div>
     <div id="error" class="text-center"></div>
-    <div id="show-weather"></div>
-  </div>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Weather</th>
+            <th>Details</th>
+            <th>Low</th>
+            <th>High</th>
+            <th>Pressure</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+          </tr>
+        </thead>
 
+        <tbody id="weather-forecast">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="row">
@@ -58,7 +94,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
-  <script type="text/javascript" src="/scripts/city-search.js"></script>
+  <script type="text/javascript" src="/scripts/forecast.js"></script>
 </body>
 
 </html>
