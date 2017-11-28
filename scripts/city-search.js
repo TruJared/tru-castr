@@ -1,5 +1,15 @@
 $('document').ready(function () {
 
+  //  fade footer on scroll
+  $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+
+    $('footer').css({
+      'opacity': 1 - scrollTop / 250
+    });
+  });
+
+
   $('#city-search-button').click(function () {
     return getWeather();
 
