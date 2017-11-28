@@ -1,5 +1,9 @@
 $('document').ready(function () {
 
+  if ($(window).width() < 650) {
+    alert('table not optimized for smaller screens');
+  }
+
   //  fade footer on scroll
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
@@ -8,6 +12,7 @@ $('document').ready(function () {
       'opacity': 1 - scrollTop / 350
     });
   });
+
 
   $("#city-search-button").click(function () {
 
