@@ -2,6 +2,7 @@ $('document').ready(function () {
 
   $('#city-search-button').click(function () {
     return getWeather();
+
   });
 
   $('#city').keypress(function (e) {

@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #fffcfc;
+  background: #f5f5f5;
   background-image: url(images/jonathan-bean-37632.jpg);
   background-attachment: fixed;
   background-position: center center;
@@ -18,29 +18,21 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* keep footer down */
-
-body {
-  display: flex;
-  flex-direction: column;
+#col-head1 {
+  margin-top: 75px;
 }
 
-.push-footer {
-  flex: 1 0 auto;
-}
-
-/* keep footer down */
 
 #nav-bar {
   margin-bottom: 0;
   padding: 0;
   border-bottom: solid thin black;
   background: lightslategray;
+  color: darkslategray;
   font-size: 23px;
   font-family: 'Inconsolata', monospace;
 }
 
-#nav-bar,
 #nav-bar a,
 #nav-bar a:visited {
   color: darkslategray;
@@ -50,12 +42,24 @@ body {
   color: white;
 }
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  float: right;
+  border: none !important;
+}
+
+#nav-menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 #current-page {
   color: white !important;
 }
 
 #logo {
-  width: 20%;
+  width: 15%;
   border-radius: 5%;
   -webkit-box-shadow: 1px 1px 2px;
   box-shadow: 1px 1px 2px;
@@ -65,9 +69,13 @@ body {
   background: #fff;
 }
 
+
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 35px;
+  height: 22px;
+  background: lightslategray;
   color: white;
   text-align: center;
   font-size: 16px;
@@ -85,13 +93,11 @@ footer a:hover {
   color: tomato;
 }
 
-/*********** INDEX **********/
-
-#head-row {
-  margin: 1px 0 0;
-  width: 100%;
-
+footer:hover {
+  opacity: 1 !important;
 }
+
+/*********** INDEX **********/
 
 #col-head1 {
   font-weight: bold;
@@ -103,19 +109,46 @@ footer a:hover {
   font-size: 40px;
 }
 
-#list-item {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 28px;
+
+#hero {
+  margin: 30px auto 30px;
+  background: rgba(250, 250, 250, .75);
+  opacity: 0;
+  -webkit-transition: opacity 5s ease-in;
+  -webkit-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
 }
 
-#list-item li {
-  padding: 0 25px;
-  color: darkslategray;
+#hero.load {
+  opacity: 1;
 }
 
-#col-text {
-  margin-top: 75px;
+#welcome {
+  margin-bottom: 25px;
+  color: black !important;
+  text-shadow: 2px 2px 2px cornflowerblue;
+  font-size: 2.35rem;
+}
+
+#welcome-paragraph {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  font-size: 1.60rem;
+}
+
+
+.call-out {
+  border-top: solid cornflowerblue 15px;
+  border-bottom: solid cornflowerblue 10px;
+  color: black;
+  font-size: 2.15rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+#col-desc1,
+#col-desc2,
+#col-desc3 {
+  font-size: 1.25rem
 }
 
 /*********** CITY SEARCH **********/
@@ -200,14 +233,14 @@ footer a:hover {
 
 
 table {
+  background: #f5f5f5;
   text-align: center;
-  background: #fffcfc;
-  color: white;
 }
 
 th {
-  font-family: 'Inconsolata', monospace;
   background: lightslategray;
+  color: white;
   font-weight: bold;
   font-size: 1.25rem;
+  font-family: 'Inconsolata', monospace;
 }

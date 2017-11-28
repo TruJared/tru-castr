@@ -1,10 +1,21 @@
 $('document').ready(function () {
 
-  $("#city-search-button").click(function () {
-    return getForecast();
+  //  fade footer on scroll
+  $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
 
+    $('footer').css({
+      'opacity': 1 - scrollTop / 350
+    });
   });
 
+  $("#city-search-button").click(function () {
+
+    return getForecast();
+
+
+
+  });
 
 });
 
